@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: #fefefe;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar { width: 0; }
+
+@keyframes slideText {
+  0%   { transform: translateY(0); }
+  18%  { transform: translateY(0); }
+  25%  { transform: translateY(-32px); }
+  43%  { transform: translateY(-32px); }
+  50%  { transform: translateY(-64px); }
+  68%  { transform: translateY(-64px); }
+  75%  { transform: translateY(-96px); }
+  93%  { transform: translateY(-96px); }
+  100% { transform: translateY(-128px); }
+}
