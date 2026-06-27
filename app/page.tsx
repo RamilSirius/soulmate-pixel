@@ -129,7 +129,8 @@ export default function Landing() {
         </ul>
 
         {/* CTA Button */}
-        <button
+        <a
+          href="/social"
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -143,11 +144,11 @@ export default function Landing() {
             padding: '5px 10px',
             marginTop: '32px',
             marginBottom: '32px',
+            textDecoration: 'none',
           }}
-          type="button"
         >
           <span style={{ fontSize: '18px', fontWeight: 400, lineHeight: '21px', color: '#fbfbff' }}>Take the quiz</span>
-        </button>
+        </a>
 
         {/* Legal text */}
         <div style={{ marginBottom: 0 }}>
