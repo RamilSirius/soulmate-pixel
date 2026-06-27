@@ -10,7 +10,7 @@ export default function Email() {
   const [email, setEmail] = useState('')
 
   return (
-    <IntermediateChrome onContinue={() => router.push('/email')} contentWidth={450}>
+    <IntermediateChrome onContinue={() => router.push(`/trialPayment?email=${encodeURIComponent(email)}`)} contentWidth={450}>
       <h2 style={{ fontSize: '26px', fontWeight: 700, lineHeight: '35.1px', color: '#000', marginBottom: '16px' }}>
         Are you ready to see what your soulmate looks like?
       </h2>
